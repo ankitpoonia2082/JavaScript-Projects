@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advice generator app</title>
+    <link rel="stylesheet" href="advice.css">
+</head>
+
+<body>
+    <!-- Main caontainer Div -->
+    <div class="container">
+
+        <!-- App Heading Div -->
+        <div class="heading">
+            <h1 id="heading">{ ADVICE-GENERATOR }</h1>
+        </div>
+
+        <!-- Advice Div with filter -->
+        <div class="advicediv">
+
+            <!-- advice Filter -->
+            <div class="filter">
+                <!-- Search Advice generator -->
+                <div class="searchadvice">
+                    <input type="text" id="searchinput" placeholder="Search advice..." onkeypress="IsEnter(event)">
+                    <button id="searchbtn" >Search Advice</button>
+                </div>
+                <!-- Random Advice generator -->
+                <div class="randomadvice">
+                    <button id="randombtn">Random Advice</button>
+                </div>
+
+            </div>
+
+            <!-- Advice display div -->
+            <div class="display">
+                <h1 id="showadvice">Advice will be here</h1>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="advice.js"></script>
+</body>
+
+</html>

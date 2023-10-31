@@ -1,0 +1,214 @@
+/* Font link ***** */
+
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+/* Default Apply to all HTML Elements */
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Grand Hotel', cursive;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    width: 100vw;
+    padding: 5%;
+}
+/* Image Side */
+.picture{
+    align-content: center;
+}
+#phone{
+    margin-top: 33px;
+    width: 33vw;
+}
+/* Login side */
+.border2 {
+    border: 1px solid rgb(201, 201, 201);
+}
+
+/* Insta Logo font */
+.heading {
+    flex-direction: row;
+    padding: 20px;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 7vh;
+    text-align: center;
+}
+
+.inputs {
+    display: block;
+    align-content: center;
+    width: 100%;
+}
+.container{
+    justify-content: center;
+    align-items: center;
+}
+
+#email,
+#password {
+    display: block;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 3px;
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(242, 242, 242);
+    flex-direction: row;
+}
+
+/* Login Button Css */
+#login {
+    border: none;
+    border-radius: 8px;
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(76, 182, 244);
+    flex-direction: row;
+    color: white;
+    font-weight: bold;
+}
+
+.or {
+    font-size: 1rem;
+    padding: 10px auto;
+    color: rgb(132, 132, 132);
+}
+
+.forgot {
+    display: inline-block;
+    margin: 10px auto;
+}
+
+.forgot a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* a tag for forgot and login by fb */
+#loginfb,
+#forgot {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+    font-size: 15px;
+    color: rgb(27, 60, 112);
+    padding: 10px;
+}
+#loginfb {
+    font-weight: bold;
+}
+
+/* SignUp */
+.signup {
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px 15px;
+    text-align: center;
+    border: 1px solid rgb(201, 201, 201);
+    font-size: .7rem;
+}
+
+/* Sign up ancher tag */
+.signup a {
+    text-decoration: none;
+    color: rgb(76, 182, 244);
+}
+
+/* Fb logo in login by fb */
+#fblogo {
+    height: 3.3vh;
+}
+
+/* Get the app text */
+.get {
+    padding: 20px;
+    font-size: 1.6rex;
+}
+
+/* appstore and playstore buttons */
+.getappbutton {
+    display: flex;
+    justify-content: center;
+}
+
+.getappbutton button {
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#play,
+#app {
+    width: 10vw;
+    height: 6vh;
+}
+
+/* responsive Css */
+
+@media screen and (max-width: 800px) {
+    .picture{
+        display: none;
+    }
+    .heading {
+        align-content: center;
+        font-size: 4rem;
+    }
+
+    .inputs {
+        display: block;
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    #email,
+    #password {
+        width: 95%;
+        align-items: center;
+        justify-content: center;
+        height: 6vh;
+    }
+
+    .login {
+        border-radius: 8px;
+        width: 100%;
+        
+    }
+    #login {
+        width: 95%;
+        height: 6vh;
+    }
+
+    .signup {
+        border: none;
+    }
+
+    #play,
+    #app {
+        width:90%;
+        height: 8vh;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .border2 {
+        border:none;
+    }
+    
+
+}
+
+@media screen and (max-width < 1100px) {
+    .picture{
+        display: none;
+    }
+}

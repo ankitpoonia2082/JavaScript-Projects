@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: #222;
+    box-sizing: border-box;
+}
+
+.main{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading{
+    width: 40%;
+    color: white;
+    background-color: #91C499;
+    border-radius: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+.card{
+    background:linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px 30px;
+    text-align: center;
+    
+}
+
+.searchbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#searchbox{
+    width: 70%;
+    border: none;
+    outline:none;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #222;
+    padding: 10px 10px ;
+    font-size: 16px;
+    margin-right: 15px;
+    flex: 1;
+}
+
+#searchbtn{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 10px 5px ;
+    cursor: pointer;
+}
+#searchbtn:hover{
+    background-color:#dcdcdc ;
+}
+
+#searchbtn img{
+    width: 17px;
+}
+/* Weather Css */
+.weather img{
+    width: 180px;
+    margin-top: 20px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+/* Detailes Div Css */
+
+.details{
+    padding: 0px 50px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.humidity , .wind{
+    display: flex;
+    align-items: center;
+    text-align: end;
+}
+
+.humidity img , .wind img{
+    width: 40px;
+    margin-right: 10%;
+}
+
+#humidity , #wind{
+    font-size: larger;
+}
+.p1{
+    font-size:medium;
+}

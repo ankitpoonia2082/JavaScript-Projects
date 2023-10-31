@@ -1,0 +1,137 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+body{
+    background-color: #94A684;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Heading div CSS */
+.heading{
+    position: sticky;
+    background-color: #AEC3AE;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.heading h1{
+    text-align: center;
+    color: #505050;
+    font-size: 40px;
+    
+}
+
+/* Advice Div CSS */
+.advicediv{
+    display: flex;
+    padding: 15px;
+    background: #E4E4D0;
+    width: 95%;
+    border-radius: 10px;
+}
+/* Search and random advice div css */
+.filter{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgb(135, 135, 135);
+    width: 30%;
+    height: 70vh;
+    justify-content: space-around;
+}
+
+/* random Advice button div */
+.randomadvice , .searchadvice{
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Search and random button CSS */
+#randombtn , #searchbtn{
+    background: #94A684;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 50%;
+    height: 6vh;
+    cursor: pointer;
+}
+
+#randombtn:hover , #searchbtn:hover{
+    border: 1px solid #455635;
+}
+.searchadvice{
+    padding:20% 0px;
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+}
+
+#searchinput{
+    background: #cccccc;
+    padding: 5px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 70%;
+    height: 6vh;
+}
+
+/* Advice Display div  */
+
+.display{
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:65%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 30px 20px;
+}
+
+#showadvice{
+    
+    text-align: centers;
+    color: #505050;
+}
+
+
+/* Responsive media query */
+
+@media screen and (max-width:500px) {
+    .display{
+        display: block;
+        width: 90%;
+       
+    }
+    .advicediv{
+        flex-direction: column;
+    }
+    .filter{
+        width: 100%;
+        border: none;
+        justify-content: space-evenly;
+    }
+    .randomadvice , .searchadvice{
+        margin: -10px;
+        padding: 5px;
+        border: 1px solid green;
+        justify-content: none;
+    }
+    .container{
+        padding: 10px;
+    }
+
+}

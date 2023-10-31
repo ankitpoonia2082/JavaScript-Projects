@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="clock.css">
+</head>
+<body>
+    <div id="heading">
+        <h1 class="heading">{ DIGITAL CLOCK }</h1>
+    </div>
+    
+
+    <div class="container">
+        <!-- date time container -->
+       <div id="datetime" class="datetime">
+        <h2 id="t" >TIME</h2>
+        <h1 id="time"></h1>
+        <h3 id="d">DATE</h3>
+        <h2 id="date"></h2>
+
+       </div>
+
+       <!-- stopwatch Container -->
+       <div id="stopwatch" class="stopwatch">
+        <h2 id="s">STOPWATCH</h2>
+        <h1 id="stop"></h1>
+        <div class="stopwatch_button">
+            <button id="start">Start/Stop</button>
+            <button id="reset" onclick="reset()">Reset</button>
+        </div>
+        
+
+       </div>
+
+    </div>
+    <script src="clock.js"></script>
+</body>
+</html>

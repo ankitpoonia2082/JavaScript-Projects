@@ -1,0 +1,116 @@
+/* Font link ***** */
+
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+/* Default Apply to all HTML Elements */
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Grand Hotel', cursive;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flexbox;
+    text-align: center;
+    float: right;
+    width: 35vw;
+    height: 90vh;
+    margin: 20px 30px;
+
+}
+
+.border {
+    border: 1px solid gray;
+}
+
+/* Insta Logo font */
+.heading {
+    flex-direction: row;
+    padding: 20px;
+    font-family: 'Grand Hotel', cursive;
+    font-size: 7vh;
+    text-align: center;
+}
+
+.inputs {
+    flex-direction: row;
+    display: flexbox;
+    align-content: center;
+    width: 99%;
+
+}
+
+#email,
+#password {
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 5px;
+    width: 25vw;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(242, 242, 242);
+    flex-direction: row;
+}
+
+/* Login Button Css */
+
+#login {
+    border: none;
+    border-radius: 8px;
+    width: 27vw;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(76, 182, 244);
+    flex-direction: row;
+    color: white;
+    font-weight: bold;
+}
+
+.forgot {
+    border: 2px solid black;
+    display: inline-block;
+
+}
+
+.forgot a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginfb,#forgot {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20vw;
+    font-size: 0.9rem;
+    color: rgb(12, 35, 71);
+    border: 1px solid black;
+    padding: 10px;
+}
+#loginfb image{
+    border: 2px solid blueviolet;
+}
+
+#loginfb {
+    font-weight: 400;
+
+}
+
+/* SignUp */
+.signup {
+
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px 15px;
+    text-align: center;
+    border:.5px solid rgb(201, 201, 201);
+    font-size: small;
+}
+
+.signup a {
+    
+    text-decoration: none;
+    color: rgb(76, 182, 244);
+}

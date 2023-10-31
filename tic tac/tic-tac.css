@@ -1,0 +1,88 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family:monospace;
+    background-image: url(images/background2.jpg);
+    background-size: cover;box-sizing: border-box;
+    
+}
+
+/* Main container */
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Heading Div */
+.heading{
+    color:whitesmoke;
+    background-color:  rgb(188, 134, 134);
+    opacity: .9;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: underline;
+}
+
+/* Game Div */
+.game{
+    margin: 30px 20px;
+    background-color: rgb(37, 37, 37) ;
+    opacity: .8;
+    max-width: 500px;
+    border-radius: 12px;
+    width: 100%;
+    color: white;
+    font-size: 50px;
+    padding: 20px;
+    align-self: center;
+}
+/* Tic Tac div with 3 div inside */
+.d1,.d2,.d3{
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+}
+.d1 ,.d2{
+    border-bottom: 2px solid rgb(157, 154, 154);
+}
+
+
+.d01,.d02,.d03{
+    text-align: center;
+    width: 100%;
+}
+.d01,.d02{
+    border-right: 2px solid rgb(157, 154, 154);
+}
+
+.d01:hover,.d02:hover,.d03:hover{
+    background-color: rgb(58, 57, 57);
+    cursor: pointer;
+}
+
+.players{
+    background-color:rgb(188, 134, 134);
+    opacity: .9;
+    border-radius: 20px;
+    display: flex;
+    width: 42%;
+    height: 5vh;
+    align-self: center;
+    align-items: center;
+    justify-content: space-around;
+    color: whitesmoke;
+    padding: 10px 5px;
+}
+.player1, .player2{
+    padding: 10px;
+}
+.player1:hover , .player2:hover{
+    background-color: #9f7878;
+    border-radius: 30px;
+    
+}
+

@@ -1,0 +1,127 @@
+/* Css File */
+/* * apply CSS on Every Element on HTML file */
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Monospace;
+    box-sizing: border-box;
+}
+
+/* Main div Css */
+.container{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: linear-gradient(135deg , #153677, #4e085f); */
+    background-color: rgb(167, 211, 151);
+    padding: 10px;
+}
+
+/* To-do App div */
+.todo-app{
+    width: 40%;
+    max-height: 540px;
+    background:white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow:8px 8px 20px grey;
+}
+
+/* To do Heading */
+.todo-app h2{
+    align-items:center;
+    color: #555843;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* To do Heading Image/Logo */
+.todo-app h2 img{
+    margin-left: 10px;
+    width: 25px;
+}
+
+/* Search input Css */
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(167, 211, 151);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+/* Search Feild Css */
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size:large;
+}
+
+/* Search Button Css */
+button{
+    border: none;
+    outline: none;
+    background:rgb(56, 118, 191);
+    color:#fff ;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    padding: 14px;
+    width: 20%;
+}
+button:hover{
+    background: #245e9f;
+}
+
+.list1 ul li{
+    list-style:none ;
+    font-size: 18px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+/* check box before tasks */
+.list1 ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(Images/circle.svg);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 10px;
+}
+.list1 ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+.list1 ul li.checked::before{
+    background-image: url(Images/check-circle-fill.svg);
+}
+
+.list1 ul li span{
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.list1 ul li span:hover{
+    background: #edeef0;
+}
+
